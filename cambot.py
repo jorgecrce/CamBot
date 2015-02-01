@@ -72,27 +72,27 @@ def go_forward():
     left_forward()
     right_forward()
     vel_left(1)
-    vel_right(0.8)
+    vel_right(1)
 
 @webiopi.macro
 def go_backward():
     left_backward()
     right_backward()
-    vel_left(0.6)
-    vel_right(0.45)
+    vel_left(0.5)
+    vel_right(0.5)
 
 @webiopi.macro
 def turn_left():
     right_forward()
     left_backward()
-    vel_left(0.3)
+    vel_left(0.2)
     vel_right(0.2)
 
 @webiopi.macro
 def turn_right():
     right_backward()
     left_forward()
-    vel_left(0.3)
+    vel_left(0.2)
     vel_right(0.2)
 
 @webiopi.macro    
